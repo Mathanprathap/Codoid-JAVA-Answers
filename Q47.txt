@@ -1,0 +1,21 @@
+String str = "Hello, World!";
+Map<Character, Integer> freqMap = new HashMap<>();
+
+// Count the frequency of each character in the string
+for (int i = 0; i < str.length(); i++) {
+    char ch = str.charAt(i);
+    freqMap.put(ch, freqMap.getOrDefault(ch, 0) + 1);
+}
+
+// Find the character with the maximum frequency
+int maxFreq = 0;
+char maxChar = '\0';
+
+for (Map.Entry<Character, Integer> entry : freqMap.entrySet()) {
+    if (entry.getValue() > maxFreq) {
+        maxFreq = entry.getValue();
+        maxChar = entry.getKey();
+    }
+}
+
+System.out.println("The character '" + maxChar + "' occurs " + maxFreq + " times in the string.");

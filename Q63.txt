@@ -1,0 +1,22 @@
+import java.util.HashSet;
+import java.util.Set;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+public class Main {
+    public static void main(String[] args) {
+        Set<Integer> set = new HashSet<>();
+        set.add(1);
+        set.add(2);
+        set.add(3);
+
+        Stream<Integer> stream = set.stream();
+        stream.forEach(System.out::println);
+
+        // Or you can collect the stream to a new set
+        Set<Integer> newSet = set.stream()
+                                 .filter(i -> i > 1)
+                                 .collect(Collectors.toSet());
+        System.out.println(newSet); // Output: [2, 3]
+    }
+}

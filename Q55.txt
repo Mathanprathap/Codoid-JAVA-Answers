@@ -1,0 +1,11 @@
+LinkedHashMap<String, Integer> map = new LinkedHashMap<>();
+
+// Add some values to the map
+map.put("apple", 1);
+map.put("banana", 2);
+map.put("cherry", 3);
+
+// Iterate over the values of the map using a for-each loop
+for(Integer value : map.values()) {
+    System.out.println(value);
+}

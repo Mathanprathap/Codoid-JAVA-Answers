@@ -1,0 +1,29 @@
+public class BreakContinueDemo {
+    public static void main(String[] args) {
+        int i = 1;
+
+        // using break statement to terminate the loop
+        while (i <= 10) {
+            if (i == 5) {
+                break;
+            }
+            System.out.println(i);
+            i++;
+        }
+
+        System.out.println("Loop terminated by break statement");
+
+        // using continue statement to skip an iteration
+        i = 1;
+        while (i <= 10) {
+            if (i == 5) {
+                i++;
+                continue;
+            }
+            System.out.println(i);
+            i++;
+        }
+
+        System.out.println("Loop finished");
+    }
+}

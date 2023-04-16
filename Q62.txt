@@ -1,0 +1,20 @@
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("apple");
+        list.add("banana");
+        list.add("cherry");
+
+        StringBuilder sb = new StringBuilder();
+        for (String s : list) {
+            sb.append(s);
+            sb.append(", ");
+        }
+        sb.deleteCharAt(sb.length() - 2);
+
+        String str = sb.toString();
+        System.out.println(str);
+    }
+}

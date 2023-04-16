@@ -1,0 +1,20 @@
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class StringToDateExample {
+    public static void main(String[] args) {
+        String dateString = "2022-11-23";
+        DateFormat inputFormat = new SimpleDateFormat("yyyy-MM-dd");
+        DateFormat outputFormat = new SimpleDateFormat("MMMM dd, yyyy");
+
+        try {
+            Date date = inputFormat.parse(dateString);
+            String outputDate = outputFormat.format(date);
+            System.out.println(outputDate);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+    }
+}

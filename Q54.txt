@@ -1,0 +1,21 @@
+public class MyClass implements Interface1, Interface2 {
+    @Override
+    public void method1() {
+        // Implementation of method1 from Interface1
+    }
+
+    @Override
+    public void method2() {
+        // Implementation of method2 from Interface1
+    }
+
+    @Override
+    public void method3() {
+        // Implementation of method3 from Interface2
+    }
+
+    @Override
+    public void method4() {
+        // Implementation of method4 from Interface2
+    }
+}

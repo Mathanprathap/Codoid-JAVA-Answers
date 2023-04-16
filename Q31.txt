@@ -1,0 +1,15 @@
+public class OverloadingDemo {
+    public void print(int num) {
+        System.out.println("The integer value is " + num);
+    }
+
+    public void print(String str) {
+        System.out.println("The string value is " + str);
+    }
+  
+    public static void main(String[] args) {
+        OverloadingDemo demo = new OverloadingDemo();
+        demo.print(10);
+        demo.print("Hello");
+    }
+}

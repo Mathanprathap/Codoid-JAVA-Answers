@@ -1,0 +1,7 @@
+public static void main(String[] args) throws FileNotFoundException {
+    // Attempt to read a file that may not exist
+    File file = new File("file.txt");
+    Scanner scanner = new Scanner(file);
+    // If the file is not found, a FileNotFoundException is thrown
+    // but not caught within this method
+}

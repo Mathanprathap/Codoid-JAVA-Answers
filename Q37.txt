@@ -1,0 +1,5 @@
+In Java, 'StringBuffer' and 'String' are both used to represent strings. However, there are some important differences between the two.
+
+'String' is an immutable class in Java, meaning that once a 'String' object is created, its value cannot be changed. Any operation that appears to modify a 'String' actually creates a new 'String' object.
+
+'StringBuffer', on the other hand, is a mutable class. This means that you can modify the contents of a StringBuffer object without creating a new object. StringBuffer is typically used when you need to perform a lot of string manipulation, such as concatenation or substitution, because it can be more efficient than creating new String objects.

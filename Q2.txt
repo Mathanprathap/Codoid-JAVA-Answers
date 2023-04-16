@@ -1,0 +1,3 @@
+String original = "Hello, World!";
+StringBuilder reversed = new StringBuilder(original).reverse();
+System.out.println(reversed.toString());

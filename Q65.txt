@@ -1,0 +1,15 @@
+In Java, you can check whether a number is odd or even using the modulo operator (%). The modulo operator returns the remainder of a division operation. If a number is even, then it will be divisible by 2 with no remainder. If a number is odd, then it will not be divisible by 2 with no remainder.
+
+Here's an example code to check if a number is odd or even:
+program:
+public class Main {
+    public static void main(String[] args) {
+        int number = 5;
+
+        if (number % 2 == 0) {
+            System.out.println(number + " is even");
+        } else {
+            System.out.println(number + " is odd");
+        }
+    }
+}

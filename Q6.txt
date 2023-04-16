@@ -1,0 +1,11 @@
+while (true) {
+    // code to be executed indefinitely
+}
+
+for (;;) {
+    // code to be executed indefinitely
+}
+
+do {
+    // code to be executed indefinitely
+} while (true);

@@ -1,0 +1,18 @@
+public class DuplicateCharacterDetector {
+    public static void main(String[] args) {
+        String str = "Hello World!";
+        int[] freq = new int[256]; // assuming ASCII character set
+        
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+            freq[ch]++;
+        }
+        
+        System.out.println("Duplicate characters in the string \"" + str + "\" are:");
+        for (int i = 0; i < freq.length; i++) {
+            if (freq[i] > 1 && (char) i != ' ') {
+                System.out.println((char) i);
+            }
+        }
+    }
+}

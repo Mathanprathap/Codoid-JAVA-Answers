@@ -1,0 +1,16 @@
+public class MethodOverloadingDemo {
+    public void printNumber(int num) {
+        System.out.println("The number is: " + num);
+    }
+
+    public void printNumber(double num) {
+        System.out.println("The number is: " + num);
+    }
+
+    public static void main(String[] args) {
+        MethodOverloadingDemo obj = new MethodOverloadingDemo();
+
+        obj.printNumber(10);
+        obj.printNumber(10.5);
+    }
+}

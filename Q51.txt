@@ -1,0 +1,22 @@
+import java.util.Enumeration;
+import java.util.Vector;
+
+public class EnumerationExample {
+    public static void main(String[] args) {
+        
+        // Create a vector
+        Vector<String> myVector = new Vector<>();
+        myVector.add("apple");
+        myVector.add("banana");
+        myVector.add("orange");
+        
+        // Get an Enumeration object from the vector
+        Enumeration<String> enumeration = myVector.elements();
+        
+        // Loop through the elements using the Enumeration object
+        while(enumeration.hasMoreElements()) {
+            String element = enumeration.nextElement();
+            System.out.println(element);
+        }
+    }
+}

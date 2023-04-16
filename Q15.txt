@@ -1,0 +1,1 @@
+To remove duplicate elements from an array in Java, you can use a "HashSet" or loop through the array and use another array to store the unique elements

@@ -1,0 +1,1 @@
+To find duplicate characters in a "String" in Java, you can use a "HashMap" or an array to count the frequency of each character.

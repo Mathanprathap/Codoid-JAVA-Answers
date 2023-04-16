@@ -1,0 +1,29 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class HashMapIterationExample {
+
+    public static void main(String[] args) {
+        
+        // Create a HashMap
+        Map<String, Integer> myHashMap = new HashMap<>();
+        myHashMap.put("apple", 3);
+        myHashMap.put("banana", 2);
+        myHashMap.put("orange", 5);
+        
+        // Iterate using a while loop
+        System.out.println("Iterating using a while loop:");
+        Map.Entry<String, Integer> entry;
+        Iterator<Map.Entry<String, Integer>> itr = myHashMap.entrySet().iterator();
+        while(itr.hasNext()) {
+            entry = itr.next();
+            System.out.println("Key = " + entry.getKey() + ", Value = " + entry.getValue());
+        }
+        
+        // Iterate using an advanced for loop
+        System.out.println("\nIterating using an advanced for loop:");
+        for(Map.Entry<String, Integer> entry : myHashMap.entrySet()) {
+            System.out.println("Key = " + entry.getKey() + ", Value = " + entry.getValue());
+        }
+    }
+}

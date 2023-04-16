@@ -1,0 +1,22 @@
+String str = "hello world";
+char[] chars = str.toCharArray();
+
+// Create a HashMap to keep track of the count of each character
+Map<Character, Integer> charCount = new HashMap<>();
+
+// Iterate over the characters in the array and update the count in the HashMap
+for (char c : chars) {
+    if (charCount.containsKey(c)) {
+        charCount.put(c, charCount.get(c) + 1);
+    } else {
+        charCount.put(c, 1);
+    }
+}
+
+// Print out the duplicate characters
+System.out.print("Duplicate characters: ");
+for (Map.Entry<Character, Integer> entry : charCount.entrySet()) {
+    if (entry.getValue() > 1) {
+        System.out.print(entry.getKey() + " ");
+    }
+}

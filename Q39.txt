@@ -1,0 +1,15 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class MapExample {
+    public static void main(String[] args) {
+        // Create a new HashMap and add some key-value pairs
+        Map<String, Integer> map = new HashMap<>();
+        map.put("Alice", 25);
+        map.put("Bob", 30);
+        map.put("Charlie", 35);
+
+        // Iterate over the values using a lambda expression
+        map.values().forEach(value -> System.out.println(value));
+    }
+}

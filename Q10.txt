@@ -1,0 +1,16 @@
+In Java, 'getName()' is a method of the 'Class' class that returns the name of the class represented by the 'Class object'. Here's an example:
+
+java
+Copy code
+public class GetNameDemo {
+    public static void main(String[] args) {
+        MyClass myObj = new MyClass();
+        Class<?> cls = myObj.getClass();
+        String name = cls.getName();
+        System.out.println("Class name: " + name);
+    }
+}
+
+class MyClass {
+    // Class definition
+}

@@ -1,0 +1,30 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
+public class DuplicateFinder {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("apple");
+        list.add("banana");
+        list.add("orange");
+        list.add("banana");
+        list.add("grape");
+        list.add("orange");
+
+        Map<String, Integer> map = new HashMap<>();
+        for (String item : list) {
+            if (map.containsKey(item)) {
+                map.put(item, map.get(item) + 1);
+            } else {
+                map.put(item, 1);
+            }
+        }
+
+        for (Map.Entry<String, Integer> entry : map.entrySet()) {
+            if (entry.getValue() > 1) {
+                System.out.println("Duplicate element: " + entry.getKey());
+            }
+        }
+    }
+}

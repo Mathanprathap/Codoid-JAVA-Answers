@@ -1,0 +1,4 @@
+LinkedList<Integer> list = new LinkedList<>(Arrays.asList(1, 2, 3, 4, 5));
+
+// Iterate over the list using a lambda expression
+list.forEach(item -> System.out.println(item));

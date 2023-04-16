@@ -1,0 +1,19 @@
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+public class Main {
+    public static void main(String[] args) {
+        // Create a LinkedHashMap with some values
+        Map<String, Integer> map = new LinkedHashMap<>();
+        map.put("one", 1);
+        map.put("two", 2);
+        map.put("three", 3);
+        map.put("four", 4);
+        map.put("five", 5);
+
+        // Iterate over the values using an enhanced for loop
+        for (Integer value : map.values()) {
+            System.out.println(value);
+        }
+    }
+}
